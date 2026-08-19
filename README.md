@@ -23,4 +23,5 @@ Meu desafio pessoal de programar e aprender algo novo todos os dias durante 100 
 | Dia | Tema | Status |
 |------|------|--------|
 | 1 | Configuração do repositório | ✅ |
-| 2 | Em breve | ⏳ |
+| 2 | Gerenciador de tarefas | ✅ |
+| 3 | Em andamento... | ⏳ |
