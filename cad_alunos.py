@@ -30,49 +30,64 @@ while True:
 
         print("\nAluno cadastrado com sucesso!")
 
-
-        # Listar Aluno 
+    # Listar alunos
     elif opcao == "2":
         print("\n===== LISTA DOS ALUNOS =====")
 
         if len(alunos) == 0:
             print("Nenhum aluno cadastrado.")
         else:
-            for novo_aluno, aluno in enumerate(alunos, start=1):
-                print(f"{novo_aluno}. {aluno}")
+            for numero, aluno in enumerate(alunos, start=1):
+                print(f"\nAluno {numero}")
+                print(f"Nome: {aluno['nome']}")
+                print(f"Idade: {aluno['idade']}")
+                print(f"Curso: {aluno['curso']}")
 
-
-       # Buscar Aluno
-
+    # Buscar aluno
     elif opcao == "3":
-        print("\n===== SEU ALUNO =====")
+        print("\n===== BUSCAR ALUNO =====")
 
-        if len(alunos) == 0:
-            print("Nenhum aluno encontrado com esse nome.")
-        else:
-            for nome, aluno in enumerate(alunos, start=1):
-                print(f"{nome}. {aluno}")
+        nome_busca = input("Digite o nome do aluno: ")
 
+        encontrado = False
 
-      # Remover Aluno
+        for aluno in alunos:
+            if aluno["nome"].lower() == nome_busca.lower():
+                print("\nAluno encontrado!")
+                print(f"Nome: {aluno['nome']}")
+                print(f"Idade: {aluno['idade']}")
+                print(f"Curso: {aluno['curso']}")
+
+                encontrado = True
+                break
+
+        if not encontrado:
+            print("\nAluno não encontrado.")
+
+    # Remover aluno
     elif opcao == "4":
-        print("\n===== REMOVA O ALUNO  =====")
+        print("\n===== REMOVER ALUNO =====")
 
-        remover_aluno = input("Remova o aluno desejado:")
+        remover_aluno = input("Digite o nome do aluno que deseja remover: ")
 
-        if remover_aluno in alunos:
-            alunos.remove(remover_aluno)
-            print("Aluno removido com sucesso!")
+        encontrado = False
 
-        else:
-            print("Aluno não encontrado.")
+        for aluno in alunos:
+            if aluno["nome"].lower() == remover_aluno.lower():
+                alunos.remove(aluno)
 
-      # Sair
+                print("\nAluno removido com sucesso!")
 
-    elif opcao =="5":
-        print("Encerrando sistema...")
+                encontrado = True
+                break
+
+        if not encontrado:
+            print("\nAluno não encontrado.")
+
+    # Sair
+    elif opcao == "5":
+        print("\nEncerrando sistema...")
         break
 
     else:
-        print("Opção inválida. Escolha uma opção de 1 a 5.")
-
+        print("\nOpção inválida. Escolha uma opção de 1 a 5.")  
