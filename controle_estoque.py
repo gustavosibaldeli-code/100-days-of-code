@@ -8,6 +8,7 @@ ARQUIVO = "produtos.txt"
 
 
 # Carregar produtos do arquivo
+
 if os.path.exists(ARQUIVO):
     with open(ARQUIVO, "r", encoding="utf-8") as arquivo:
         for linha in arquivo:
