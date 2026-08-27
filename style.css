@@ -1,0 +1,249 @@
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}
+
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* Seção principal */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1d4ed8
+    );
+
+    color: white;
+}
+
+.hero-text {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* Botões */
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background-color: white;
+    color: #1d4ed8;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    background-color: #dbeafe;
+}
+
+
+/* Serviços */
+
+.servicos {
+    padding: 90px 8%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.servicos h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #6b7280;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+
+    padding: 35px 25px;
+
+    border-radius: 12px;
+
+    background-color: #f5f7fa;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    margin: 20px 0 15px;
+
+    font-size: 22px;
+}
+
+.card p {
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+
+/* Contato */
+
+.contato {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background-color: #e5e7eb;
+}
+
+.contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    margin-bottom: 30px;
+
+    color: #4b5563;
+
+    font-size: 18px;
+}
+
+
+/* Rodapé */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #111827;
+
+    color: white;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
