@@ -1,13 +1,41 @@
+<div align="center">
+
 # 🚀 100 Days of Code
 
-> Minha jornada de 100 dias de código, aprendendo, construindo projetos e evoluindo como desenvolvedor.
+### Minha jornada de 100 dias de código — aprendendo, construindo projetos e evoluindo como desenvolvedor.
 
-[![Dias concluídos](https://img.shields.io/badge/Dias%20concluídos-7%2F100-success?style=for-the-badge)](./)
-[![Progresso](https://img.shields.io/badge/Progresso-7%25-blue?style=for-the-badge)](./)
-[![Python](https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge\&logo=python)](https://www.python.org/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-[![GitHub](https://img.shields.io/badge/GitHub-Versionamento-black?style=for-the-badge\&logo=github)](https://github.com/)
+[![Dias concluídos](https://img.shields.io/badge/Dias%20concluídos-8%2F100-success?style=for-the-badge)](./)
+[![Progresso](https://img.shields.io/badge/Progresso-8%25-blue?style=for-the-badge)](./)
+[![Status](https://img.shields.io/badge/Status-Em%20andamento-orange?style=for-the-badge)](./)
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/)
+
+</div>
+
+<br>
+
+> 💡 **A ideia não é apenas completar 100 dias, mas evoluir um pouco a cada dia.**
+
+<br>
+
+## 🧭 Sumário
+
+- [📌 Sobre o desafio](#-sobre-o-desafio)
+- [🎯 Objetivos](#-objetivos)
+- [📊 Progresso](#-progresso)
+- [📅 Projetos](#-projetos)
+- [🧩 Detalhes dos projetos](#-detalhes-dos-projetos)
+- [🛠️ Tecnologias](#-tecnologias)
+- [🗺️ Etapas do desafio](#-etapas-do-desafio)
+- [📈 Evolução](#-evolução)
+- [🗓️ Próximos dias](#-próximos-dias)
+- [💭 Por que estou fazendo isso?](#-por-que-estou-fazendo-isso)
+- [📌 Status atual](#-status-atual)
 
 ---
 
@@ -19,7 +47,13 @@ Durante os 100 dias, meu objetivo é estudar, desenvolver projetos, aprender nov
 
 O desafio começou com projetos focados em **Python e lógica de programação**, mas a partir dos próximos dias a proposta passa a envolver diferentes linguagens e tecnologias, aumentando gradualmente a complexidade dos projetos.
 
-> 💡 **A ideia não é apenas completar 100 dias, mas evoluir um pouco a cada dia.**
+<div align="center">
+
+|          🗓️ Dia atual         |        📈 Progresso        |      🧱 Etapa atual     |        🔁 Última entrega       |
+| :----------------------------: | :-------------------------: | :----------------------: | :------------------------------: |
+| **08 / 100**                    | **8%**                       | Desenvolvimento Web       | Página Web Interativa (JS)        |
+
+</div>
 
 ---
 
@@ -41,35 +75,35 @@ O desafio começou com projetos focados em **Python e lógica de programação**
 
 ## 📊 Progresso
 
-### 🔥 7 / 100 dias concluídos
+### 🔥 8 / 100 dias concluídos
 
 ```text
-███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  7%
+████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  8%
 ```
 
-**Próximo objetivo:** Dia 8 🚀
+**Próximo objetivo:** Dia 9 🚀 — Projeto com API
 
 ---
 
 ## 📅 Projetos
 
 |      Dia      | Projeto                         | Tecnologias                          |   Status  |
-| :-----------: | :------------------------------ | :----------------------------------- | :-------: |
-|    ✅ **01**   | Configuração do repositório     | Git • GitHub                         | Concluído |
-|    ✅ **02**   | Gerenciador de tarefas          | Python                               | Concluído |
-|    ✅ **03**   | Sistema escolar                 | Python                               | Concluído |
-|    ✅ **04**   | Sistema de controle de estoque  | Python • TXT                         | Concluído |
-|    ✅ **05**   | Sistema de cadastro             | Python                               | Concluído |
-|    ✅ **06**   | Caixa eletrônico                | Python                               | Concluído |
-|    ✅ **07**   | Landing Page                    | HTML • CSS                           | Concluído |
-|   🔜 **08**   | Página web interativa           | HTML • CSS • JavaScript              |  Próximo  |
-|   🔒 **09**   | Projeto com API                 | Python • API                         | Planejado |
-|   🔒 **10**   | Dashboard com banco de dados    | Python • SQLite                      | Planejado |
-|   🔒 **11**   | Sistema de login                | Python • MySQL                       | Planejado |
-|   🔒 **12**   | Aplicação de clima              | JavaScript • API                     | Planejado |
-|   🔒 **13**   | Integração Front-end + Back-end | HTML • CSS • JS • Python             | Planejado |
-|   🔒 **14**   | Projeto Full Stack              | Python • JavaScript • Banco de dados | Planejado |
-| 🔒 **15–100** | Novos projetos e tecnologias    | —                                    |  Em breve |
+| :-----------: | :------------------------------ | :------------------------------------ | :-------: |
+|    ✅ **01**   | Configuração do repositório     | Git • GitHub                          | Concluído |
+|    ✅ **02**   | Gerenciador de tarefas          | Python                                | Concluído |
+|    ✅ **03**   | Sistema escolar                 | Python                                | Concluído |
+|    ✅ **04**   | Sistema de controle de estoque  | Python • TXT                          | Concluído |
+|    ✅ **05**   | Sistema de cadastro             | Python                                | Concluído |
+|    ✅ **06**   | Caixa eletrônico                | Python                                | Concluído |
+|    ✅ **07**   | Landing Page                    | HTML • CSS                            | Concluído |
+|    ✅ **08**   | Página web interativa           | HTML • CSS • JavaScript               | Concluído |
+|   🔜 **09**   | Projeto com API                 | Python • API                          |  Próximo  |
+|   🔒 **10**   | Dashboard com banco de dados    | Python • SQLite                       | Planejado |
+|   🔒 **11**   | Sistema de login                | Python • MySQL                        | Planejado |
+|   🔒 **12**   | Aplicação de clima              | JavaScript • API                      | Planejado |
+|   🔒 **13**   | Integração Front-end + Back-end | HTML • CSS • JS • Python              | Planejado |
+|   🔒 **14**   | Projeto Full Stack              | Python • JavaScript • Banco de dados  | Planejado |
+| 🔒 **15–100** | Novos projetos e tecnologias    | —                                      |  Em breve |
 
 > A programação dos próximos dias pode ser ajustada conforme meu aprendizado e evolução durante o desafio.
 
@@ -79,13 +113,12 @@ O desafio começou com projetos focados em **Python e lógica de programação**
 
 <details>
 <summary>📁 Dia 01 — Configuração do repositório</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Configurar o ambiente do desafio e aprender o fluxo básico de versionamento utilizando Git e GitHub.
 
-### Aprendizados
-
+**Aprendizados**
 * Git
 * GitHub
 * Repositórios
@@ -98,20 +131,18 @@ Configurar o ambiente do desafio e aprender o fluxo básico de versionamento uti
 
 <details>
 <summary>📁 Dia 02 — Gerenciador de tarefas</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Criar um sistema simples para gerenciamento de tarefas utilizando Python.
 
-### Funcionalidades
-
+**Funcionalidades**
 * Adicionar tarefas
 * Listar tarefas
 * Remover tarefas
 * Interação através do terminal
 
-### Aprendizados
-
+**Aprendizados**
 * Lógica de programação
 * Estruturas condicionais
 * Loops
@@ -123,20 +154,18 @@ Criar um sistema simples para gerenciamento de tarefas utilizando Python.
 
 <details>
 <summary>📁 Dia 03 — Sistema escolar</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Desenvolver um sistema para cadastro e gerenciamento de alunos.
 
-### Funcionalidades
-
+**Funcionalidades**
 * Cadastro de alunos
 * Listagem de alunos
 * Busca de alunos
 * Armazenamento de informações
 
-### Aprendizados
-
+**Aprendizados**
 * Listas
 * Dicionários
 * Loops
@@ -149,13 +178,12 @@ Desenvolver um sistema para cadastro e gerenciamento de alunos.
 
 <details>
 <summary>📁 Dia 04 — Sistema de controle de estoque</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Criar um sistema para cadastro e gerenciamento de produtos, evoluindo o projeto para trabalhar com persistência de dados.
 
-### Funcionalidades
-
+**Funcionalidades**
 * Cadastro de produtos
 * Listagem de produtos
 * Busca de produtos
@@ -163,8 +191,7 @@ Criar um sistema para cadastro e gerenciamento de produtos, evoluindo o projeto 
 * Salvamento em arquivo `.txt`
 * Leitura dos dados ao iniciar o programa
 
-### Aprendizados
-
+**Aprendizados**
 * Manipulação de arquivos
 * `open()`
 * Leitura e escrita em arquivos
@@ -177,13 +204,12 @@ Criar um sistema para cadastro e gerenciamento de produtos, evoluindo o projeto 
 
 <details>
 <summary>📁 Dia 05 — Sistema de cadastro</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Desenvolver um sistema de cadastro utilizando Python, reforçando os conceitos de organização de dados e interação com o usuário.
 
-### Aprendizados
-
+**Aprendizados**
 * Estruturas de dados
 * Funções
 * Condicionais
@@ -195,21 +221,19 @@ Desenvolver um sistema de cadastro utilizando Python, reforçando os conceitos d
 
 <details>
 <summary>📁 Dia 06 — Caixa eletrônico</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Criar um sistema de caixa eletrônico capaz de realizar operações bancárias básicas através do terminal.
 
-### Funcionalidades
-
+**Funcionalidades**
 * Consultar saldo
 * Realizar saque
 * Realizar depósito
 * Exibir menu de operações
 * Validação das operações
 
-### Aprendizados
-
+**Aprendizados**
 * Funções
 * Condicionais
 * Loops
@@ -222,18 +246,16 @@ Criar um sistema de caixa eletrônico capaz de realizar operações bancárias b
 
 <details>
 <summary>📁 Dia 07 — Landing Page</summary>
+<br>
 
-### Objetivo
-
+**Objetivo**
 Criar uma landing page moderna e responsiva, marcando a primeira etapa do desafio focada em desenvolvimento web.
 
-### Tecnologias
-
+**Tecnologias**
 * HTML5
 * CSS3
 
-### Estrutura
-
+**Estrutura**
 * Cabeçalho com navegação
 * Seção principal (Hero)
 * Apresentação de serviços
@@ -241,8 +263,7 @@ Criar uma landing page moderna e responsiva, marcando a primeira etapa do desafi
 * Seção de contato
 * Rodapé
 
-### Aprendizados
-
+**Aprendizados**
 * Estrutura HTML
 * Tags semânticas
 * Links e navegação
@@ -255,9 +276,39 @@ Criar uma landing page moderna e responsiva, marcando a primeira etapa do desafi
 * Transições
 * Organização de arquivos
 
-### Evolução
-
+**Evolução**
 O Dia 07 representa a transição dos projetos exclusivamente executados no terminal para aplicações com interface gráfica e desenvolvimento web.
+
+</details>
+
+<details open>
+<summary>📁 Dia 08 — Página web interativa</summary>
+<br>
+
+**Objetivo**
+Adicionar interatividade real à página construída no Dia 07, dando o primeiro passo com JavaScript no navegador.
+
+**Tecnologias**
+* HTML5
+* CSS3
+* JavaScript
+
+**Funcionalidades**
+* Seleção e manipulação de elementos do DOM
+* Resposta a eventos de clique e interação do usuário
+* Alteração dinâmica de conteúdo e estilos
+* Validações simples no lado do cliente
+
+**Aprendizados**
+* Manipulação do DOM
+* `addEventListener`
+* Seletores (`querySelector`, `getElementById`)
+* Manipulação de classes (`classList`)
+* Lógica aplicada ao front-end
+* Interação entre HTML, CSS e JavaScript
+
+**Evolução**
+O Dia 08 conecta a lógica de programação da Etapa 1 com o front-end da Etapa 2, mostrando na prática como o JavaScript transforma uma página estática em uma experiência interativa.
 
 </details>
 
@@ -267,22 +318,21 @@ O Dia 07 representa a transição dos projetos exclusivamente executados no term
 
 ### 💻 Linguagens
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square\&logo=html5\&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square\&logo=css3\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
 ### 🗄️ Banco de dados
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
-
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square\&logo=sqlite\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
 ### 🔧 Ferramentas
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square\&logo=visual-studio-code\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 
 ---
 
@@ -290,12 +340,9 @@ O Dia 07 representa a transição dos projetos exclusivamente executados no term
 
 O desafio será dividido em etapas para que a evolução aconteça de forma gradual.
 
-### 🟢 Etapa 1 — Fundamentos
-
-**Dias 01–06**
+### 🟢 Etapa 1 — Fundamentos `Dias 01–06` ✅
 
 Foco em:
-
 * Lógica de programação
 * Python
 * Estruturas condicionais
@@ -306,14 +353,9 @@ Foco em:
 * Persistência de dados
 * Git e GitHub
 
----
-
-### 🔵 Etapa 2 — Desenvolvimento Web
-
-**Dias 07–14**
+### 🔵 Etapa 2 — Desenvolvimento Web `Dias 07–14` 🟡 *(em andamento)*
 
 Foco em:
-
 * HTML
 * CSS
 * JavaScript
@@ -323,14 +365,9 @@ Foco em:
 * APIs
 * Integração Front-end e Back-end
 
----
-
-### 🟣 Etapa 3 — Dados e Back-end
-
-**Dias 15–30**
+### 🟣 Etapa 3 — Dados e Back-end `Dias 15–30`
 
 Foco em:
-
 * Python para Back-end
 * APIs REST
 * MySQL
@@ -339,14 +376,9 @@ Foco em:
 * Autenticação
 * Integração com bancos de dados
 
----
-
-### 🟠 Etapa 4 — Projetos Full Stack
-
-**Dias 31–50**
+### 🟠 Etapa 4 — Projetos Full Stack `Dias 31–50`
 
 Foco em:
-
 * Front-end
 * Back-end
 * APIs
@@ -355,16 +387,11 @@ Foco em:
 * Arquitetura de aplicações
 * Integração entre tecnologias
 
----
-
-### 🔴 Etapa 5 — Novas tecnologias
-
-**Dias 51–75**
+### 🔴 Etapa 5 — Novas tecnologias `Dias 51–75`
 
 Nesta etapa serão introduzidas novas linguagens, frameworks e ferramentas conforme a evolução do desafio.
 
 Possíveis tecnologias:
-
 * C#
 * .NET
 * Frameworks JavaScript
@@ -373,16 +400,11 @@ Possíveis tecnologias:
 * APIs
 * Arquitetura de software
 
----
-
-### 🟡 Etapa 6 — Projetos de portfólio
-
-**Dias 76–100**
+### 🟡 Etapa 6 — Projetos de portfólio `Dias 76–100`
 
 Foco na criação de projetos maiores e mais próximos de aplicações reais.
 
 Objetivos:
-
 * Criar projetos completos
 * Aplicar conhecimentos anteriores
 * Melhorar arquitetura
@@ -402,6 +424,7 @@ Dia 04  ████████████████░░  Arquivos / Persi
 Dia 05  █████████████████░  Sistemas / Organização
 Dia 06  ██████████████████  Lógica / Regras de negócio
 Dia 07  ██████████████████  HTML / CSS / Web
+Dia 08  ██████████████████  JavaScript / DOM / Interatividade
 ```
 
 A cada etapa, os projetos serão gradualmente mais complexos, buscando aplicar conceitos aprendidos anteriormente e introduzir novos conhecimentos.
@@ -411,18 +434,10 @@ A cada etapa, os projetos serão gradualmente mais complexos, buscando aplicar c
 ## 🗓️ Próximos dias
 
 ```text
-01 ✅
-02 ✅
-03 ✅
-04 ✅
-05 ✅
-06 ✅
-07 ✅
-08 🔜
-09 🔒
-10 🔒
-...
-100 🔒
+01 ✅   02 ✅   03 ✅   04 ✅   05 ✅
+06 ✅   07 ✅   08 ✅   09 🔜   10 🔒
+                 ...
+                100 🔒
 ```
 
 O README será atualizado conforme novos projetos forem concluídos.
@@ -443,18 +458,24 @@ O objetivo final é chegar ao Dia 100 olhando para os primeiros projetos e conse
 
 ## 📌 Status atual
 
-**Dia atual:** 07 / 100
+<div align="center">
 
-**Progresso:** 7%
+|      Campo      | Valor                                  |
+| :--------------: | :--------------------------------------- |
+| 🗓️ **Dia atual**        | 08 / 100                          |
+| 📈 **Progresso**         | 8%                                |
+| 🛠️ **Projeto atual**     | Página Web Interativa             |
+| 🔜 **Próximo projeto**   | Projeto com API (Dia 09)          |
+| 🟢 **Status**             | Em andamento                      |
 
-**Projeto atual:** Landing Page
-
-**Próximo projeto:** Página web interativa com JavaScript
-
-**Status:** 🟢 Em andamento
+</div>
 
 ---
 
-⭐ Se quiser acompanhar minha evolução, acompanhe este repositório.
+<div align="center">
 
-**100 dias. 100 oportunidades para evoluir. 🚀**
+⭐ **Se quiser acompanhar minha evolução, dá um star neste repositório.**
+
+### 100 dias. 100 oportunidades para evoluir. 🚀
+
+</div>
