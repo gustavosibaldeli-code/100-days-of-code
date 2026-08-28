@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gustavo Dev Experience — Portfolio & 100 Days of Code</title>
+<meta name="description" content="Portfólio pessoal e profissional de Gustavo Godoi Sibaldeli — Engenharia de Software, 100 Days of Code e projetos em desenvolvimento.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- CYBERPUNK/JARVIS OVERLAY                   -->
+  <!-- ========================================== -->
+
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="hologrid" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="glitch-overlay" aria-hidden="true"></div>
+
+  <div class="radar-container" aria-hidden="true">
+    <div class="radar"></div>
+    <div class="radar-ring"></div>
+    <div class="radar-ring" style="animation-delay:0.5s"></div>
+    <div class="radar-ring" style="animation-delay:1s"></div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- ELEMENTOS VISUAIS                          -->
+  <!-- ========================================== -->
+
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="spray-light" aria-hidden="true"></div>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar entre modo claro e escuro">
+    <span class="theme-icon" id="themeIcon" aria-hidden="true">🌙</span>
+  </button>
+
+  <div class="corner-tag" aria-hidden="true">G.DEV</div>
+
+  <!-- Status Bar -->
+  <div class="status-bar" id="statusBar">
+    <div class="status-item">
+      <span class="status-dot"></span>
+      <span class="status-label">SYSTEM</span>
+      <span class="status-value" id="systemStatus">ONLINE</span>
+    </div>
+    <div class="status-item">
+      <span class="status-label">UPTIME</span>
+      <span class="status-value" id="uptimeDisplay">00:00:00</span>
+    </div>
+    <div class="status-item">
+      <span class="status-label">STATUS</span>
+      <span class="status-value" id="connectionStatus">● DEVELOPING</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ========================================== -->
+    <!-- HERO — APRESENTAÇÃO PRINCIPAL              -->
+    <!-- ========================================== -->
+
+    <section id="hero" class="section hero">
+      <div class="hero-bg-layer" data-depth="0.03" aria-hidden="true"></div>
+
+      <div class="hero-tags-layer" aria-hidden="true">
+        <span class="floating-tag" data-depth="0.09" style="top:14%; left:8%;">&lt;/&gt;</span>
+        <span class="floating-tag" data-depth="0.05" style="top:22%; left:82%;">PYTHON</span>
+        <span class="floating-tag" data-depth="0.12" style="top:68%; left:12%;">HTML</span>
+        <span class="floating-tag" data-depth="0.07" style="top:78%; left:78%;">CSS</span>
+        <span class="floating-tag" data-depth="0.08" style="top:40%; left:5%;">JAVASCRIPT</span>
+        <span class="floating-tag" data-depth="0.1" style="top:45%; left:90%;">{ }</span>
+        <span class="floating-tag" data-depth="0.06" style="top:85%; left:15%;">git commit</span>
+        <span class="floating-tag" data-depth="0.09" style="top:30%; left:75%;">#100DaysOfCode</span>
+      </div>
+
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow reveal" id="eyebrowText">100 DAYS OF CODE — DIA 08</p>
+          <h1 class="hero-title reveal">
+            Olá, eu sou<br>
+            <span class="spray-name" data-depth="0.06">Gustavo<span class="spray-underline" aria-hidden="true"></span></span>
+            <span class="wave" aria-hidden="true">👋</span>
+          </h1>
+          <p class="hero-sub reveal" id="heroSubText">Estudante de Engenharia de Software e desenvolvedor em formação, construindo projetos e evoluindo um pouco mais a cada dia.</p>
+          <div class="hero-badges reveal">
+            <span class="badge">100 Days of Code</span>
+            <span class="badge badge-outline">Software Engineering</span>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap" data-depth="0.14">
+          <div class="hero-photo-frame" id="heroFrame">
+            <img src="C:\Users\gusta\OneDrive\Desktop\aulas\git\dia-8-interactive-portfolio\Formatura.JPG" alt="Foto de Gustavo Godoi Sibaldeli" class="hero-photo" id="heroPhoto">
+            <div class="hero-photo-fallback" aria-hidden="true">G</div>
+            <div class="frame-scan" aria-hidden="true"></div>
+            <div class="frame-border-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para a seção Sobre Mim"><span></span></a>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SOBRE MIM                                  -->
+    <!-- ========================================== -->
+
+    <section id="sobre" class="section about">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">SOBRE MIM</p>
+        <h2 class="section-title reveal">Do aprendizado à construção de projetos reais.</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="reveal">
+              Meu nome é <strong>Gustavo Godoi Sibaldeli</strong> e sou estudante de <strong>Engenharia de Software</strong>, com formação técnica em <strong>Informática</strong>.
+            </p>
+            <p class="reveal">
+              Minha trajetória na tecnologia começou através do interesse por programação e desenvolvimento de sistemas. Ao longo desse caminho, venho estudando diferentes tecnologias e colocando o conhecimento em prática através de projetos próprios.
+            </p>
+            <p class="reveal">
+              Atualmente, meu objetivo é evoluir continuamente como desenvolvedor, fortalecendo meus fundamentos de programação, aprendendo novas tecnologias e desenvolvendo projetos que demonstrem, na prática, aquilo que estou aprendendo.
+            </p>
+            <p class="reveal">
+              Mais do que apenas aprender uma linguagem ou uma ferramenta, busco compreender como as diferentes áreas do desenvolvimento se conectam para transformar uma ideia em uma solução funcional.
+            </p>
+          </div>
+
+          <div class="about-tag-card reveal glass">
+            <p class="mono-label">about.txt</p>
+            <ul class="tag-list">
+              <li>estudante de Engenharia de Software</li>
+              <li>Técnico em Informática</li>
+              <li>desenvolvimento de projetos</li>
+              <li>aprendizado contínuo</li>
+              <li>foco em evolução</li>
+              <li>construção de portfólio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 100 DAYS OF CODE                           -->
+    <!-- ========================================== -->
+
+    <section id="challenge" class="section challenge-section">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">DESAFIO ATUAL</p>
+        <h2 class="section-title reveal">100 dias. 100 oportunidades para evoluir.</h2>
+
+        <div class="challenge-grid">
+          <div class="challenge-text">
+            <p class="reveal">
+              O <strong>100 Days of Code</strong> é um desafio pessoal criado para transformar programação em um hábito consistente.
+            </p>
+            <p class="reveal">
+              A ideia é dedicar tempo todos os dias ao aprendizado e à prática de programação, criando projetos, estudando novos conceitos, resolvendo problemas e registrando minha evolução ao longo do processo.
+            </p>
+            <p class="reveal">
+              O objetivo não é simplesmente completar 100 dias, mas construir uma base cada vez mais sólida através da consistência.
+            </p>
+            <p class="reveal">
+              Cada projeto representa uma etapa dessa evolução: começo com problemas mais simples e, progressivamente, aumento a complexidade das aplicações, das tecnologias utilizadas e das soluções desenvolvidas.
+            </p>
+            <blockquote class="challenge-quote reveal">
+              "Não se trata de saber tudo. Trata-se de continuar evoluindo."
+            </blockquote>
+          </div>
+
+          <div class="challenge-stats reveal glass">
+            <div class="stat-item">
+              <span class="stat-number" id="daysCompleted">08</span>
+              <span class="stat-label">Dias concluídos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100</span>
+              <span class="stat-label">Dias de desafio</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Evolução contínua</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SKILLS / STACK                             -->
+    <!-- ========================================== -->
+
+    <section id="skills" class="section skills">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">STACK</p>
+        <h2 class="section-title reveal">Tecnologias que fazem parte da minha jornada.</h2>
+        <p class="skills-intro reveal">Estas são algumas das tecnologias e ferramentas que venho estudando e utilizando durante minha formação e meus projetos.</p>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal glass" data-percent="85">
+            <div class="skill-head">
+              <span class="skill-name">Python</span>
+              <span class="skill-percent mono">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Linguagem principal utilizada nos projetos do 100 Days of Code e no desenvolvimento de aplicações.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="90">
+            <div class="skill-head">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent mono">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Estruturação semântica de páginas e aplicações web.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="85">
+            <div class="skill-head">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percent mono">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Estilização, responsividade, animações e construção de interfaces.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="75">
+            <div class="skill-head">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent mono">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Interatividade, manipulação do DOM, lógica e funcionalidades para aplicações web.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="60">
+            <div class="skill-head">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-percent mono">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Modelagem e gerenciamento de bancos de dados relacionais.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="55">
+            <div class="skill-head">
+              <span class="skill-name">PHP</span>
+              <span class="skill-percent mono">55%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Desenvolvimento web e integração com sistemas e bancos de dados.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="70">
+            <div class="skill-head">
+              <span class="skill-name">Git</span>
+              <span class="skill-percent mono">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Controle de versão e organização do desenvolvimento.</p>
+          </div>
+
+          <div class="skill-card reveal glass" data-percent="70">
+            <div class="skill-head">
+              <span class="skill-name">GitHub</span>
+              <span class="skill-percent mono">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+            <p class="skill-desc">Versionamento, documentação e publicação dos projetos.</p>
+          </div>
+        </div>
+
+        <p class="skills-note mono">* Os percentuais representam meu nível atual de estudo e prática, em constante evolução.</p>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- JORNADA / TIMELINE                         -->
+    <!-- ========================================== -->
+
+    <section id="jornada" class="section timeline-section">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">MINHA JORNADA</p>
+        <h2 class="section-title reveal">Uma evolução construída etapa por etapa.</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-year mono">2025</span>
+            <div class="timeline-card glass">
+              <h3>Técnico em Informática</h3>
+              <p>Formação técnica em Informática, desenvolvendo os primeiros conhecimentos sólidos em programação, lógica, redes, banco de dados e fundamentos da tecnologia.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-year mono">2025/2026</span>
+            <div class="timeline-card glass">
+              <h3>Projetos e prática</h3>
+              <p>Desenvolvimento de projetos próprios para transformar conceitos estudados em aplicações funcionais e fortalecer minha experiência prática.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-year mono">2026</span>
+            <div class="timeline-card glass">
+              <h3>Engenharia de Software</h3>
+              <p>Início da graduação em Engenharia de Software, aprofundando conhecimentos relacionados à arquitetura de software, programação, algoritmos, sistemas e desenvolvimento de aplicações.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-year mono">2026</span>
+            <div class="timeline-card glass">
+              <h3>100 Days of Code</h3>
+              <p>Início do desafio pessoal de 100 dias de código, criando projetos progressivamente mais completos e documentando minha evolução como desenvolvedor.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-year mono">Próximos passos</span>
+            <div class="timeline-card glass timeline-future">
+              <h3>Evolução contínua</h3>
+              <p>Continuar estudando, desenvolver projetos mais complexos, ampliar meu domínio tecnológico e me preparar para atuar profissionalmente na área de desenvolvimento de software.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTADORES                                 -->
+    <!-- ========================================== -->
+
+    <section id="contadores" class="section counters">
+      <div class="section-inner">
+        <div class="counters-grid">
+          <div class="counter-card reveal">
+            <span class="counter mono" data-target="8">0</span>
+            <p class="counter-label">Dias de Código</p>
+          </div>
+          <div class="counter-card reveal">
+            <span class="counter mono" data-target="100">0</span>
+            <p class="counter-label">Meta do Desafio</p>
+          </div>
+          <div class="counter-card reveal">
+            <span class="counter mono" data-target="8">0</span>
+            <p class="counter-label">Tecnologias Estudadas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PROJETOS                                   -->
+    <!-- ========================================== -->
+
+    <section id="projetos" class="section projects-section">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">PROJETOS</p>
+        <h2 class="section-title reveal">Transformando aprendizado em prática.</h2>
+        <p class="projects-intro reveal">Cada projeto desenvolvido durante minha jornada tem como objetivo transformar conceitos estudados em soluções práticas.</p>
+
+        <!-- Projeto em Destaque - Dia 08 -->
+        <div class="project-highlight tilt-card reveal glass" id="tiltCard">
+          <div class="tilt-card-glow" aria-hidden="true"></div>
+          <div class="tilt-card-content">
+            <p class="mono-label">// projeto em destaque — dia 08</p>
+            <h3>Gustavo Dev Experience</h3>
+            <p class="tilt-card-desc">
+              Portfólio interativo desenvolvido durante o Dia 08 do desafio 100 Days of Code. O projeto combina HTML, CSS e JavaScript com animações, efeitos visuais, Canvas API, GSAP, responsividade e componentes interativos para criar uma experiência de apresentação profissional.
+            </p>
+            <ul class="tech-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>C++</li>
+            </ul>
+            <a href="https://github.com/gustavosibaldeli-code/100-days-of-code" class="btn btn-outline" target="_blank">Ver no GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Projetos Anteriores -->
+        <div class="projects-grid">
+          <div class="project-card reveal glass">
+            <div class="project-card-header">
+              <span class="project-number">#01</span>
+              <span class="project-date">Dia 01</span>
+            </div>
+            <h4>Gerenciador de Tarefas</h4>
+            <p>Aplicação desenvolvida em Python para criação, visualização e gerenciamento de tarefas através do terminal.</p>
+            <div class="project-tech">
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal glass">
+            <div class="project-card-header">
+              <span class="project-number">#02</span>
+              <span class="project-date">Dia 02</span>
+            </div>
+            <h4>Sistema Escolar</h4>
+            <p>Sistema desenvolvido em Python para cadastro, listagem e gerenciamento de alunos, aplicando conceitos de estruturas de dados, condicionais e repetição.</p>
+            <div class="project-tech">
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal glass">
+            <div class="project-card-header">
+              <span class="project-number">#03</span>
+              <span class="project-date">Dia 03</span>
+            </div>
+            <h4>Controle de Estoque</h4>
+            <p>Sistema para gerenciamento de produtos e estoque, desenvolvido para praticar lógica de programação, manipulação de dados e persistência de informações.</p>
+            <div class="project-tech">
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal glass">
+            <div class="project-card-header">
+              <span class="project-number">#04</span>
+              <span class="project-date">Dia 04</span>
+            </div>
+            <h4>Sistema Bancário</h4>
+            <p>Simulação de operações bancárias através de uma aplicação em Python, trabalhando conceitos de lógica, estruturas condicionais, funções e interação com o usuário.</p>
+            <div class="project-tech">
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTATO                                    -->
+    <!-- ========================================== -->
+
+    <section id="contato" class="section contact">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">CONECTE-SE</p>
+        <h2 class="section-title reveal">Vamos construir algo.</h2>
+        <p class="contact-sub reveal">
+          Estou sempre buscando novas oportunidades para aprender, desenvolver projetos e evoluir profissionalmente na área de tecnologia.
+        </p>
+        <p class="contact-sub reveal" style="margin-top:-20px;">
+          Se quiser conhecer melhor meu trabalho, meus projetos ou acompanhar minha evolução, você pode acessar meus perfis abaixo.
+        </p>
+
+        <div class="contact-buttons reveal">
+          <a href="https://github.com/gustavosibaldeli-code" class="contact-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.34-3.84-1.34-.52-1.32-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.33-5.21 5.61.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gustavo-godoi-sibaldeli-36793528a/" class="contact-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="mailto:gustavo@email.com" class="contact-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.1L19.8 6H4.2Zm15.8 1.9-7.2 5.6a1.5 1.5 0 0 1-1.85 0L4 7.9v10.6h16V7.9Z"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- RODAPÉ                                     -->
+  <!-- ========================================== -->
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-brand mono">Gustavo Dev Experience</p>
+      <p class="footer-sub mono">100 Days of Code — Day 08</p>
+      <p class="footer-author mono">Desenvolvido por Gustavo Godoi Sibaldeli</p>
+      <div class="footer-links">
+        <a href="https://github.com/gustavosibaldeli-code" target="_blank">GitHub</a>
+        <span class="footer-divider">•</span>
+        <a href="https://www.linkedin.com/in/gustavo-godoi-sibaldeli-36793528a/" target="_blank">LinkedIn</a>
+        <span class="footer-divider">•</span>
+        <a href="mailto:gustavo@email.com">Email</a>
+      </div>
+      <p class="footer-copy mono">© 2026 Gustavo Godoi Sibaldeli. Todos os direitos reservados.</p>
+      <p class="footer-quote mono">"Cada linha de código é mais um passo na minha evolução."</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
