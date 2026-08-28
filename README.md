@@ -41,10 +41,10 @@ O desafio começou com projetos focados em **Python e lógica de programação**
 
 ## 📊 Progresso
 
-### 🔥 7 / 100 dias concluídos
+### 🔥 8 / 100 dias concluídos
 
 ```text
-███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  7%
+████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  8%
 ```
 
 **Próximo objetivo:** Dia 8 🚀
@@ -62,14 +62,13 @@ O desafio começou com projetos focados em **Python e lógica de programação**
 |    ✅ **05**   | Sistema de cadastro             | Python                               | Concluído |
 |    ✅ **06**   | Caixa eletrônico                | Python                               | Concluído |
 |    ✅ **07**   | Landing Page                    | HTML • CSS                           | Concluído |
-|   🔜 **08**   | Página web interativa           | HTML • CSS • JavaScript              |  Próximo  |
+|    ✅ **08**   | Página web interativa           | HTML • CSS • JavaScript              | Concluído |
 |   🔒 **09**   | Projeto com API                 | Python • API                         | Planejado |
 |   🔒 **10**   | Dashboard com banco de dados    | Python • SQLite                      | Planejado |
 |   🔒 **11**   | Sistema de login                | Python • MySQL                       | Planejado |
 |   🔒 **12**   | Aplicação de clima              | JavaScript • API                     | Planejado |
 |   🔒 **13**   | Integração Front-end + Back-end | HTML • CSS • JS • Python             | Planejado |
 |   🔒 **14**   | Projeto Full Stack              | Python • JavaScript • Banco de dados | Planejado |
-| 🔒 **15–100** | Novos projetos e tecnologias    | —                                    |  Em breve |
 
 > A programação dos próximos dias pode ser ajustada conforme meu aprendizado e evolução durante o desafio.
 
@@ -261,6 +260,44 @@ O Dia 07 representa a transição dos projetos exclusivamente executados no term
 
 </details>
 
+<details>
+<summary>📁 Dia 08 — Página Web Interativa</summary>
+
+### Objetivo
+
+Evoluir a Landing Page criada no Dia 07 adicionando interatividade através do JavaScript, tornando a aplicação mais dinâmica e próxima de um projeto real.
+
+### Tecnologias
+
+* HTML5
+* CSS3
+* JavaScript
+
+### Funcionalidades
+
+* Interface moderna
+* Interações com JavaScript
+* Manipulação de elementos da página
+* Melhorias visuais
+* Responsividade
+* Organização de componentes
+
+### Aprendizados
+
+* Introdução ao JavaScript
+* Manipulação do DOM
+* Eventos
+* Integração entre HTML, CSS e JavaScript
+* Estruturação de projetos web
+* Depuração de erros
+* Organização de arquivos Front-End
+
+### Evolução
+
+O Dia 08 marca o início da utilização de JavaScript no desafio, permitindo criar páginas mais dinâmicas e interativas.
+
+</details>
+
 ---
 
 ## 🛠️ Tecnologias
@@ -402,6 +439,7 @@ Dia 04  ████████████████░░  Arquivos / Persi
 Dia 05  █████████████████░  Sistemas / Organização
 Dia 06  ██████████████████  Lógica / Regras de negócio
 Dia 07  ██████████████████  HTML / CSS / Web
+Dia 08  ██████████████████  JavaScript / DOM / Interatividade
 ```
 
 A cada etapa, os projetos serão gradualmente mais complexos, buscando aplicar conceitos aprendidos anteriormente e introduzir novos conhecimentos.
@@ -418,7 +456,7 @@ A cada etapa, os projetos serão gradualmente mais complexos, buscando aplicar c
 05 ✅
 06 ✅
 07 ✅
-08 🔜
+08 ✅
 09 🔒
 10 🔒
 ...
@@ -441,15 +479,16 @@ O objetivo final é chegar ao Dia 100 olhando para os primeiros projetos e conse
 
 ---
 
+
 ## 📌 Status atual
 
-**Dia atual:** 07 / 100
+**Dia atual:** 08 / 100
 
-**Progresso:** 7%
+**Progresso:** 8%
 
-**Projeto atual:** Landing Page
+**Projeto atual:** Página Web Interativa
 
-**Próximo projeto:** Página web interativa com JavaScript
+**Próximo projeto:** Projeto utilizando API
 
 **Status:** 🟢 Em andamento
 
